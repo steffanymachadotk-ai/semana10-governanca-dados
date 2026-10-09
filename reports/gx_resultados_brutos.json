@@ -1,0 +1,392 @@
+[
+  {
+    "regra": {
+      "dataset": "clientes",
+      "coluna": "cliente_id",
+      "regra": "nao_nulo",
+      "descricao": "cliente_id não pode ser nulo"
+    },
+    "resultado_gx": {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "fonte_clientes-asset_clientes",
+          "column": "cliente_id"
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 120,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "clientes",
+      "coluna": "cpf",
+      "regra": "unico",
+      "descricao": "cpf deve ser único"
+    },
+    "resultado_gx": {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "fonte_clientes-asset_clientes",
+          "column": "cpf"
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 120,
+        "unexpected_count": 2,
+        "unexpected_percent": 1.6666666666666667,
+        "partial_unexpected_list": [
+          "111.222.333-44",
+          "111.222.333-44"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 1.6666666666666667,
+        "unexpected_percent_nonmissing": 1.6666666666666667,
+        "partial_unexpected_counts": [
+          {
+            "value": "111.222.333-44",
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          11,
+          63
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "clientes",
+      "coluna": "email",
+      "regra": "regex",
+      "valor": ".+@.+",
+      "descricao": "email deve conter @"
+    },
+    "resultado_gx": {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "batch_id": "fonte_clientes-asset_clientes",
+          "column": "email",
+          "regex": ".+@.+"
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 120,
+        "unexpected_count": 3,
+        "unexpected_percent": 2.5,
+        "partial_unexpected_list": [
+          "email_sem_arroba.com",
+          "email_sem_arroba.com",
+          "email_sem_arroba.com"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 2.5,
+        "unexpected_percent_nonmissing": 2.5,
+        "partial_unexpected_counts": [
+          {
+            "value": "email_sem_arroba.com",
+            "count": 3
+          }
+        ],
+        "partial_unexpected_index_list": [
+          6,
+          33,
+          87
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "clientes",
+      "coluna": "status_cliente",
+      "regra": "em_conjunto",
+      "valor": [
+        "ativo",
+        "inativo",
+        "bloqueado"
+      ],
+      "descricao": "status_cliente deve estar no conjunto permitido"
+    },
+    "resultado_gx": {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "fonte_clientes-asset_clientes",
+          "column": "status_cliente",
+          "value_set": [
+            "ativo",
+            "inativo",
+            "bloqueado"
+          ]
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 120,
+        "unexpected_count": 2,
+        "unexpected_percent": 1.6666666666666667,
+        "partial_unexpected_list": [
+          "ATIVO",
+          "ATIVO"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 1.6666666666666667,
+        "unexpected_percent_nonmissing": 1.6666666666666667,
+        "partial_unexpected_counts": [
+          {
+            "value": "ATIVO",
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          40,
+          78
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "pedidos",
+      "coluna": "pedido_id",
+      "regra": "unico",
+      "descricao": "pedido_id deve ser único"
+    },
+    "resultado_gx": {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "fonte_pedidos-asset_pedidos",
+          "column": "pedido_id"
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 720,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "pedidos",
+      "coluna": "cliente_id",
+      "regra": "nao_nulo",
+      "descricao": "cliente_id não pode ser nulo"
+    },
+    "resultado_gx": {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "fonte_pedidos-asset_pedidos",
+          "column": "cliente_id"
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 720,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "pedidos",
+      "coluna": "total",
+      "regra": "maior_que",
+      "valor": 0,
+      "descricao": "total deve ser positivo"
+    },
+    "resultado_gx": {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "fonte_pedidos-asset_pedidos",
+          "column": "total",
+          "min_value": 0.0,
+          "strict_min": true
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 720,
+        "unexpected_count": 3,
+        "unexpected_percent": 0.4166666666666667,
+        "partial_unexpected_list": [
+          -298.67,
+          -153.69,
+          -75.44
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.4166666666666667,
+        "unexpected_percent_nonmissing": 0.4166666666666667,
+        "partial_unexpected_counts": [
+          {
+            "value": -298.67,
+            "count": 1
+          },
+          {
+            "value": -153.69,
+            "count": 1
+          },
+          {
+            "value": -75.44,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          14,
+          146,
+          411
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  },
+  {
+    "regra": {
+      "dataset": "pedidos",
+      "coluna": "status",
+      "regra": "em_conjunto",
+      "valor": [
+        "criado",
+        "pago",
+        "entregue",
+        "cancelado"
+      ],
+      "descricao": "status deve estar no conjunto permitido"
+    },
+    "resultado_gx": {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "fonte_pedidos-asset_pedidos",
+          "column": "status",
+          "value_set": [
+            "criado",
+            "pago",
+            "entregue",
+            "cancelado"
+          ]
+        },
+        "meta": {},
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 720,
+        "unexpected_count": 2,
+        "unexpected_percent": 0.2777777777777778,
+        "partial_unexpected_list": [
+          "FINALIZADO",
+          "FINALIZADO"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.2777777777777778,
+        "unexpected_percent_nonmissing": 0.2777777777777778,
+        "partial_unexpected_counts": [
+          {
+            "value": "FINALIZADO",
+            "count": 2
+          }
+        ],
+        "partial_unexpected_index_list": [
+          80,
+          302
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  }
+]

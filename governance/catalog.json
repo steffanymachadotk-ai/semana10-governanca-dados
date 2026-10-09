@@ -1,0 +1,91 @@
+{
+  "gerado_em": "2026-10-09T22:12:41.167903",
+  "datasets": [
+    {
+      "nome": "dados/clientes_raw.csv",
+      "descricao": "Cadastro bruto de clientes com dados pessoais e problemas intencionais para diagnóstico.",
+      "owner": "disciplina-banco-dados",
+      "formato": "csv",
+      "sensibilidade": "dados_pessoais_restrito",
+      "frequencia_atualizacao": "gerado sob demanda na prática",
+      "colunas": [
+        {
+          "nome": "cliente_id",
+          "tipo": "inteiro",
+          "lgpd": false,
+          "descricao": "Identificador técnico do cliente"
+        },
+        {
+          "nome": "nome",
+          "tipo": "texto",
+          "lgpd": true,
+          "descricao": "Nome completo"
+        },
+        {
+          "nome": "cpf",
+          "tipo": "texto",
+          "lgpd": true,
+          "descricao": "Documento pessoal"
+        },
+        {
+          "nome": "email",
+          "tipo": "texto",
+          "lgpd": true,
+          "descricao": "Contato pessoal"
+        },
+        {
+          "nome": "telefone",
+          "tipo": "texto",
+          "lgpd": true,
+          "descricao": "Contato pessoal"
+        }
+      ]
+    },
+    {
+      "nome": "dados/clientes_silver_mascarado.csv",
+      "descricao": "Versão governada para análise: sem nome, CPF e telefone; e-mail hasheado; idade generalizada.",
+      "owner": "disciplina-banco-dados",
+      "formato": "csv",
+      "sensibilidade": "interno_anonimizado_parcial",
+      "frequencia_atualizacao": "gerado após mascaramento",
+      "colunas": [
+        {
+          "nome": "cliente_id",
+          "tipo": "int64",
+          "lgpd": false,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        },
+        {
+          "nome": "data_nascimento",
+          "tipo": "str",
+          "lgpd": false,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        },
+        {
+          "nome": "cidade",
+          "tipo": "str",
+          "lgpd": false,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        },
+        {
+          "nome": "status_cliente",
+          "tipo": "str",
+          "lgpd": false,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        },
+        {
+          "nome": "email_hash",
+          "tipo": "str",
+          "lgpd": true,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        },
+        {
+          "nome": "faixa_etaria",
+          "tipo": "str",
+          "lgpd": false,
+          "descricao": "Coluna resultante do pipeline de mascaramento"
+        }
+      ]
+    }
+  ]
+}

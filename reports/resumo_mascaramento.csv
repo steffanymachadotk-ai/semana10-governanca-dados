@@ -1,0 +1,4 @@
+tecnica,aplicacao,objetivo
+supressao,"nome, cpf e telefone removidos",reduzir exposição direta
+hash+salt,email -> email_hash,manter chave de comparação sem mostrar e-mail
+generalizacao,idade -> faixa_etaria,preservar análise sem idade exata

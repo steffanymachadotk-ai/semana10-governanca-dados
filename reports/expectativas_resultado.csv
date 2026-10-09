@@ -1,0 +1,9 @@
+motor,dataset,expectativa,coluna,sucesso,falhas,total
+Great Expectations,clientes,cliente_id não pode ser nulo,cliente_id,True,0,120
+Great Expectations,clientes,cpf deve ser único,cpf,False,2,120
+Great Expectations,clientes,email deve conter @,email,False,3,120
+Great Expectations,clientes,status_cliente deve estar no conjunto permitido,status_cliente,False,2,120
+Great Expectations,pedidos,pedido_id deve ser único,pedido_id,True,0,720
+Great Expectations,pedidos,cliente_id não pode ser nulo,cliente_id,True,0,720
+Great Expectations,pedidos,total deve ser positivo,total,False,3,720
+Great Expectations,pedidos,status deve estar no conjunto permitido,status,False,2,720

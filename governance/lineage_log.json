@@ -1,0 +1,42 @@
+[
+  {
+    "ts": "2026-10-09T22:12:41.168260",
+    "entrada": "script 01",
+    "saida": "dados/clientes_raw.csv",
+    "transformacoes": [
+      "geração local de dados com problemas controlados para aprendizagem"
+    ]
+  },
+  {
+    "ts": "2026-10-09T22:12:41.168265",
+    "entrada": "dados/clientes_raw.csv",
+    "saida": "reports/diagnostico_qualidade.csv",
+    "transformacoes": [
+      "cálculo de nulos",
+      "duplicatas",
+      "e-mails inválidos",
+      "datas futuras",
+      "domínios fora do padrão"
+    ]
+  },
+  {
+    "ts": "2026-10-09T22:12:41.168268",
+    "entrada": "dados/clientes_raw.csv",
+    "saida": "dados/clientes_silver_mascarado.csv",
+    "transformacoes": [
+      "supressão de nome/cpf/telefone",
+      "hash+salt do email",
+      "idade para faixa_etaria"
+    ]
+  },
+  {
+    "ts": "2026-10-09T22:12:41.168270",
+    "entrada": "dados/clientes_silver_mascarado.csv",
+    "saida": "governance/catalog.json",
+    "transformacoes": [
+      "documentação de metadados",
+      "classificação de sensibilidade",
+      "descrição de colunas"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "dataset": "clientes",
+    "coluna": "cliente_id",
+    "regra": "nao_nulo",
+    "descricao": "cliente_id não pode ser nulo"
+  },
+  {
+    "dataset": "clientes",
+    "coluna": "cpf",
+    "regra": "unico",
+    "descricao": "cpf deve ser único"
+  },
+  {
+    "dataset": "clientes",
+    "coluna": "email",
+    "regra": "regex",
+    "valor": ".+@.+",
+    "descricao": "email deve conter @"
+  },
+  {
+    "dataset": "clientes",
+    "coluna": "status_cliente",
+    "regra": "em_conjunto",
+    "valor": [
+      "ativo",
+      "inativo",
+      "bloqueado"
+    ],
+    "descricao": "status_cliente deve estar no conjunto permitido"
+  },
+  {
+    "dataset": "pedidos",
+    "coluna": "pedido_id",
+    "regra": "unico",
+    "descricao": "pedido_id deve ser único"
+  },
+  {
+    "dataset": "pedidos",
+    "coluna": "cliente_id",
+    "regra": "nao_nulo",
+    "descricao": "cliente_id não pode ser nulo"
+  },
+  {
+    "dataset": "pedidos",
+    "coluna": "total",
+    "regra": "maior_que",
+    "valor": 0,
+    "descricao": "total deve ser positivo"
+  },
+  {
+    "dataset": "pedidos",
+    "coluna": "status",
+    "regra": "em_conjunto",
+    "valor": [
+      "criado",
+      "pago",
+      "entregue",
+      "cancelado"
+    ],
+    "descricao": "status deve estar no conjunto permitido"
+  }
+]

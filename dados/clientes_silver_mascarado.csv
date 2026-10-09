@@ -1,0 +1,121 @@
+cliente_id,data_nascimento,cidade,status_cliente,email_hash,faixa_etaria
+1,1996-08-24,,ativo,0819e61dc503e41b,25-34
+2,2002-08-28,Teresina,bloqueado,42d77489821baf70,18-24
+3,2005-10-04,Fortaleza,ativo,74e33fff610c605d,18-24
+4,1956-07-28,São Luís,ativo,983fdaf251aefff0,60+
+5,1995-07-25,,ativo,41633d950ba80d69,25-34
+6,2004-11-10,,bloqueado,6a5494eb70d0aaf4,18-24
+7,1961-03-26,Belém,ativo,088f577e43c58b4e,60+
+8,1985-12-25,Belém,inativo,ded5b68f365f0e73,35-44
+9,1966-07-08,Teresina,ativo,1e8a11e99876a67e,60+
+10,1969-07-08,Teresina,ativo,cd5e0ad15dea27aa,45-59
+11,1952-11-30,São Luís,bloqueado,f556df274c6cf53e,60+
+12,1978-08-21,Belém,ativo,ff066a59ccc02998,45-59
+13,1958-07-27,Belém,ativo,7d77fc5a10a5c0d1,60+
+14,1980-12-20,,bloqueado,00a1ce1fea375d0a,45-59
+15,1954-04-12,,bloqueado,d82450d7927d7ac9,60+
+16,2002-11-08,Recife,ativo,efd9b8007ede37c0,18-24
+17,1977-02-26,,bloqueado,9d9e24d4abf57dc7,45-59
+18,1979-07-01,Fortaleza,ativo,bcfc2e49cf089943,45-59
+19,2001-03-25,São Luís,bloqueado,79802cdcb7c7805d,25-34
+20,1975-12-05,Recife,inativo,27796d2283eb330a,45-59
+21,1994-08-29,Fortaleza,ativo,00ba8858e626eae0,25-34
+22,2026-12-30,São Luís,inativo,f1cc0647fc1ec486,invalida
+23,1963-03-13,Teresina,inativo,45c9f9e7f2540491,60+
+24,1980-11-01,Teresina,inativo,fcadc2798caca7c6,45-59
+25,1980-03-30,Fortaleza,bloqueado,00a594f1378a9f98,45-59
+26,1984-04-13,Fortaleza,ativo,d1d2aedb9564666a,35-44
+27,2005-09-03,,inativo,471f920a8e3bb60b,18-24
+28,1964-12-02,Belém,ativo,cc092c5932a798bb,60+
+29,2006-11-04,Recife,ativo,8f842959b726ea77,18-24
+30,2004-09-04,Belém,inativo,84eacef74233c72f,18-24
+31,1979-08-03,,bloqueado,10e2f17ddada49d0,45-59
+32,1986-06-12,Fortaleza,bloqueado,55e2b8da9808d3fc,35-44
+33,1950-12-29,São Luís,bloqueado,634b53741d57f670,60+
+34,2002-04-03,Teresina,ativo,088f577e43c58b4e,18-24
+35,1999-10-06,,ativo,43f243e9327930ba,25-34
+36,1992-07-24,Fortaleza,ativo,589533eebe5144ad,25-34
+37,1966-07-04,São Luís,ativo,d616e16ace666ac1,60+
+38,1963-11-07,Recife,inativo,45b11057b63fbe3d,60+
+39,1958-10-22,Recife,bloqueado,d11dffe46340ef31,60+
+40,1982-04-22,Fortaleza,ativo,033aba43865176b1,35-44
+41,1991-03-22,Fortaleza,ATIVO,3c1d76b3cff8c789,35-44
+42,1965-02-16,São Luís,bloqueado,c31def1f6f10aa74,60+
+43,1990-11-08,Fortaleza,bloqueado,bc86a36a457e8ff2,35-44
+44,1988-12-16,,bloqueado,c875182bb01c437c,35-44
+45,1984-01-15,Teresina,bloqueado,5f4d77e88095a26c,35-44
+46,1990-05-24,,ativo,b439e7bdfe8e7ef3,35-44
+47,1956-04-13,Belém,bloqueado,bb646a7ed448c23d,60+
+48,1974-01-31,São Luís,ativo,97ab0341dced4081,45-59
+49,1980-09-05,Recife,inativo,1825d463684cb323,45-59
+50,1955-02-19,Fortaleza,bloqueado,47fef817b59d886c,60+
+51,1990-02-19,,bloqueado,689dabe99bff2243,35-44
+52,1952-02-09,,bloqueado,4e9f5c57590a16f1,60+
+53,1961-07-04,Fortaleza,ativo,ad3bb050ad93a438,60+
+54,1955-10-22,São Luís,ativo,068df1e840d304f2,60+
+55,2003-01-28,Fortaleza,inativo,570f69f066de2d40,18-24
+56,2000-09-20,Fortaleza,ativo,76854d1a72bf8643,25-34
+57,1951-03-11,São Luís,bloqueado,f335fdb3696451f3,60+
+58,1980-09-11,,inativo,e9bb8c26f2b07201,45-59
+59,1986-12-21,São Luís,bloqueado,42d4216b18d01b58,35-44
+60,1977-12-05,Recife,inativo,4d3158b85944f27c,45-59
+61,1997-04-01,,inativo,0fb19352d261861a,25-34
+62,1951-09-05,São Luís,inativo,879a2c828d88a94d,60+
+63,2006-01-17,São Luís,ativo,b5a66072d4da74e4,18-24
+64,1965-12-13,,bloqueado,11c97ebe1f633efe,60+
+65,1998-12-08,Belém,inativo,4f9bc92080ed1cb2,25-34
+66,1972-04-02,,bloqueado,d4309eaa5217c635,45-59
+67,1970-04-12,Recife,bloqueado,e6d7e7c3ebb62136,45-59
+68,2006-11-07,Recife,inativo,db38e964e65b50b9,18-24
+69,2008-07-22,São Luís,ativo,8e9a64b9fe7c0ad4,18-24
+70,1983-10-20,Belém,inativo,3b58a065018c9f5a,35-44
+71,1960-12-19,Teresina,ativo,63d644286b744dcc,60+
+72,1985-09-19,Teresina,ativo,005a7efd4b63eaf1,35-44
+73,1955-11-27,,ativo,d4cee8f4f5300acc,60+
+74,1967-04-24,,inativo,4f94bfd082d3f271,45-59
+75,1972-04-04,Belém,ativo,bae65b0611d58ef8,45-59
+76,1959-04-10,Recife,inativo,79ab0857c4e50460,60+
+77,1958-03-10,Belém,inativo,75eefec261981577,60+
+78,2008-02-01,Belém,inativo,413490cfb5b7c4f3,18-24
+79,1966-05-21,Belém,ATIVO,611eae5a53f83e88,60+
+80,1985-11-12,,bloqueado,808c43f7f9d005a1,35-44
+81,2000-07-31,Teresina,bloqueado,36c135e09a737661,25-34
+82,2006-02-11,Belém,inativo,439d68fd223037c3,18-24
+83,1968-03-18,,inativo,5b9417b07016b1f6,45-59
+84,2008-02-21,Teresina,inativo,625dcc86d60f4834,18-24
+85,1963-05-01,Recife,ativo,dcb42f9bcc575b4d,60+
+86,1956-04-09,Recife,ativo,9642acc4219fa0b8,60+
+87,1965-07-29,,bloqueado,b7f6daee65819825,60+
+88,1964-06-01,Fortaleza,bloqueado,088f577e43c58b4e,60+
+89,1984-06-26,São Luís,bloqueado,1cb028c95b7fe519,35-44
+90,1987-04-20,Teresina,bloqueado,58d79ddff2e2900a,35-44
+91,1969-03-30,Fortaleza,bloqueado,fe9e371928672b30,45-59
+92,1992-08-28,Belém,bloqueado,46e4f0c0a11f9379,25-34
+93,1973-08-13,São Luís,ativo,6f86685293cbb987,45-59
+94,1952-03-22,Fortaleza,ativo,db1c7bedf1624aac,60+
+95,2026-11-08,Belém,bloqueado,291f2f22251240d7,invalida
+96,1957-08-27,Belém,inativo,aaca5c426fed3beb,60+
+97,2003-06-19,Recife,ativo,9229a4e71712ddd9,18-24
+98,1997-08-29,Teresina,inativo,ee6296b0682cc346,25-34
+99,2004-05-03,Fortaleza,ativo,956d05c0005074ad,18-24
+100,1992-07-12,Teresina,ativo,7f2b8edf04ffee06,25-34
+101,1986-07-02,Belém,ativo,dd91c6d3069d079b,35-44
+102,1954-02-19,Teresina,bloqueado,9395291a73b3c0a5,60+
+103,1982-06-05,Recife,ativo,065d35e3656240a4,35-44
+104,1970-05-26,Belém,ativo,22644bd300ea0394,45-59
+105,2001-01-06,São Luís,bloqueado,0cde5e3d161c9d62,25-34
+106,1996-06-25,Recife,bloqueado,ae9dad409bf1fb8c,25-34
+107,1991-06-28,São Luís,inativo,fc758f3e65adde8a,35-44
+108,2004-09-06,Belém,bloqueado,fa5d6e1e8fbd4fa4,18-24
+109,1976-09-25,Recife,ativo,a6480eee77cad3e2,45-59
+110,1952-05-13,Belém,bloqueado,7a97e0a848e3c2ec,60+
+111,2002-02-12,,ativo,7712c734020ae36c,18-24
+112,1969-01-26,,inativo,b37d24edbc61961a,45-59
+113,2002-07-20,Recife,bloqueado,414f2cd1ab379676,18-24
+114,1966-12-03,,inativo,0095299a83cbb3e1,45-59
+115,1970-06-30,Recife,bloqueado,526a63b6aa4c5980,45-59
+116,1975-09-30,Recife,ativo,86d33c442ea86a0a,45-59
+117,1975-06-16,São Luís,ativo,8b0849b41e3559ff,45-59
+118,1962-09-17,Teresina,inativo,ad7613fe7cf9aaf7,60+
+119,2003-08-10,Teresina,bloqueado,2498de301045fb3f,18-24
+120,1973-01-19,Belém,ativo,1e9398ba2edd0afb,45-59

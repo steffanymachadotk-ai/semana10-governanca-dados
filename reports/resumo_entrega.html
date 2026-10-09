@@ -1,0 +1,30 @@
+<html><head><meta charset='utf-8'><title>Resumo da Entrega</title><style>body{font-family:Arial;max-width:900px;margin:30px auto;line-height:1.5}code{background:#eee;padding:2px 4px;border-radius:4px}</style></head><body><h2>Resumo da Entrega · Semana 10 · Governança de Dados
+</h2>
+<h2>Arquivos verificados
+</h2>
+<li>[x] `dados/clientes_raw.csv`</li>
+<li>[x] `dados/pedidos_raw.csv`</li>
+<li>[x] `reports/diagnostico_qualidade.csv`</li>
+<li>[x] `reports/expectativas_resultado.csv`</li>
+<li>[x] `dados/clientes_silver_mascarado.csv`</li>
+<li>[x] `governance/catalog.json`</li>
+<li>[x] `governance/lineage_log.json`</li>
+<p>
+## Principais achados de qualidade
+</p>
+<li>`clientes` · Completude: cidade não pode ser nulo → 25 falhas (20.83%).</li>
+<li>`clientes` · Unicidade: CPF deve ser único → 1 falhas (0.83%).</li>
+<li>`clientes` · Acurácia: email deve conter @ → 3 falhas (2.5%).</li>
+<li>`clientes` · Temporalidade: data_nascimento não pode ser futura → 2 falhas (1.67%).</li>
+<li>`clientes` · Conformidade: status_cliente em {ativo,inativo,bloqueado} → 2 falhas (1.67%).</li>
+<li>`pedidos` · Acurácia: total deve ser positivo → 3 falhas (0.42%).</li>
+<li>`pedidos` · Conformidade: status em {criado,pago,entregue,cancelado} → 2 falhas (0.28%).</li>
+<p>
+## Evidências que devem aparecer no caderno/PDF
+</p>
+<li>Print do terminal após `00_testar_ambiente.py`.</li>
+<li>Print do relatório `reports/diagnostico_qualidade.html`.</li>
+<li>Print da validação de expectativas (`03_expectativas_gx.py`).</li>
+<li>Print do antes/depois do mascaramento.</li>
+<li>Print do `catalog.json` e/ou `lineage_log.json` no VS Code.</li>
+<li>Respostas escritas explicando risco, técnica aplicada e decisão de governança.</li></body></html>

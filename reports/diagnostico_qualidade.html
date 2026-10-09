@@ -1,0 +1,132 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>dataset</th>
+      <th>dimensao</th>
+      <th>regra</th>
+      <th>falhas</th>
+      <th>total</th>
+      <th>pct_falha</th>
+      <th>risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>clientes</td>
+      <td>Completude</td>
+      <td>nome não pode ser nulo</td>
+      <td>0</td>
+      <td>120</td>
+      <td>0.00</td>
+      <td>cadastro incompleto</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Completude</td>
+      <td>cpf não pode ser nulo</td>
+      <td>0</td>
+      <td>120</td>
+      <td>0.00</td>
+      <td>cadastro incompleto</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Completude</td>
+      <td>email não pode ser nulo</td>
+      <td>0</td>
+      <td>120</td>
+      <td>0.00</td>
+      <td>cadastro incompleto</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Completude</td>
+      <td>cidade não pode ser nulo</td>
+      <td>25</td>
+      <td>120</td>
+      <td>20.83</td>
+      <td>cadastro incompleto</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Completude</td>
+      <td>status_cliente não pode ser nulo</td>
+      <td>0</td>
+      <td>120</td>
+      <td>0.00</td>
+      <td>cadastro incompleto</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Unicidade</td>
+      <td>CPF deve ser único</td>
+      <td>1</td>
+      <td>120</td>
+      <td>0.83</td>
+      <td>duplicidade de pessoa</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Acurácia</td>
+      <td>email deve conter @</td>
+      <td>3</td>
+      <td>120</td>
+      <td>2.50</td>
+      <td>contato inválido</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Temporalidade</td>
+      <td>data_nascimento não pode ser futura</td>
+      <td>2</td>
+      <td>120</td>
+      <td>1.67</td>
+      <td>idade/data impossível</td>
+    </tr>
+    <tr>
+      <td>clientes</td>
+      <td>Conformidade</td>
+      <td>status_cliente em {ativo,inativo,bloqueado}</td>
+      <td>2</td>
+      <td>120</td>
+      <td>1.67</td>
+      <td>domínio fora do padrão</td>
+    </tr>
+    <tr>
+      <td>pedidos</td>
+      <td>Completude</td>
+      <td>cliente_id não pode ser nulo</td>
+      <td>0</td>
+      <td>720</td>
+      <td>0.00</td>
+      <td>pedido sem cliente</td>
+    </tr>
+    <tr>
+      <td>pedidos</td>
+      <td>Acurácia</td>
+      <td>total deve ser positivo</td>
+      <td>3</td>
+      <td>720</td>
+      <td>0.42</td>
+      <td>métrica financeira inválida</td>
+    </tr>
+    <tr>
+      <td>pedidos</td>
+      <td>Conformidade</td>
+      <td>status em {criado,pago,entregue,cancelado}</td>
+      <td>2</td>
+      <td>720</td>
+      <td>0.28</td>
+      <td>status fora do padrão</td>
+    </tr>
+    <tr>
+      <td>pedidos</td>
+      <td>Temporalidade</td>
+      <td>criado_em deve ser data válida</td>
+      <td>0</td>
+      <td>720</td>
+      <td>0.00</td>
+      <td>data inválida</td>
+    </tr>
+  </tbody>
+</table>

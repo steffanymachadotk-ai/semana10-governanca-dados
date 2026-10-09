@@ -1,0 +1,14 @@
+dataset,dimensao,regra,falhas,total,pct_falha,risco
+clientes,Completude,nome não pode ser nulo,0,120,0.0,cadastro incompleto
+clientes,Completude,cpf não pode ser nulo,0,120,0.0,cadastro incompleto
+clientes,Completude,email não pode ser nulo,0,120,0.0,cadastro incompleto
+clientes,Completude,cidade não pode ser nulo,25,120,20.83,cadastro incompleto
+clientes,Completude,status_cliente não pode ser nulo,0,120,0.0,cadastro incompleto
+clientes,Unicidade,CPF deve ser único,1,120,0.83,duplicidade de pessoa
+clientes,Acurácia,email deve conter @,3,120,2.5,contato inválido
+clientes,Temporalidade,data_nascimento não pode ser futura,2,120,1.67,idade/data impossível
+clientes,Conformidade,"status_cliente em {ativo,inativo,bloqueado}",2,120,1.67,domínio fora do padrão
+pedidos,Completude,cliente_id não pode ser nulo,0,720,0.0,pedido sem cliente
+pedidos,Acurácia,total deve ser positivo,3,720,0.42,métrica financeira inválida
+pedidos,Conformidade,"status em {criado,pago,entregue,cancelado}",2,720,0.28,status fora do padrão
+pedidos,Temporalidade,criado_em deve ser data válida,0,720,0.0,data inválida
